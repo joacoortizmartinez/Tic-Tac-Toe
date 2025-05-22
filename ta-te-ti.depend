@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1747921692 source:d:\facultad\programacion1\ta te ti\ta-te-ti\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"stPromiedos.h"
+
+1747919126 d:\facultad\programacion1\ta te ti\ta-te-ti\stpromiedos.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1747920693 source:d:\facultad\programacion1\ta te ti\ta-te-ti\stpromiedos.c
+	"stPromiedos.h"
+
