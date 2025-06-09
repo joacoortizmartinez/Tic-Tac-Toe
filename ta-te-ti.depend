@@ -13,3 +13,30 @@
 1747920693 source:d:\facultad\programacion1\ta te ti\ta-te-ti\stpromiedos.c
 	"stPromiedos.h"
 
+1749486363 source:d:\p_final\tic-tac-toe\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"stPromiedos.h"
+	"stJugador.h"
+
+1749473979 d:\p_final\tic-tac-toe\stpromiedos.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1749473979 source:d:\p_final\tic-tac-toe\stpromiedos.c
+	"stPromiedos.h"
+
+1749486343 source:d:\p_final\tic-tac-toe\stjugador.c
+	"stJugador.h"
+
+1749486351 d:\p_final\tic-tac-toe\stjugador.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+

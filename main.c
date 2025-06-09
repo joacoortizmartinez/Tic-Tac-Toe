@@ -1,9 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <string.h>
+#include <ctype.h>
+
 #include "stPromiedos.h"
+#include "stJugador.h"
 
-
+char nom[50] = "jugadores.dat";
 void cargar_tablero(char tab[3][3]);
 void mostrar_tab(char tab[3][3]);
 void jugar_x(char tab[3][3]);
@@ -16,6 +20,17 @@ void guardar(Promiedos p, char nombreArchivo[50]);
 
 int main()
 {
+
+
+    stJugador jugadores[100];
+    int v_jugadores = 0;
+    int dim_jugadores = 100;
+
+    v_jugadores = cargar_arreglo_users(jugadores, v_jugadores, dim_jugadores, nom);
+    jugadores[v_jugadores] = crear_cuenta(v_jugadores, jugadores, dim_jugadores);
+    v_jugadores++;
+    guardar_arreglo_jugadores(jugadores, v_jugadores, nom);
+
     char tablero[3][3];
     int flag = 0;
     char op = 's';
@@ -321,3 +336,11 @@ Promiedos cargar(char nombreArchivo[50]) {
     return p;
 }
 
+void guardar_jugador_al_final(stJugador nuevoJugador, const char* nombreArchivo)
+{
+    FILE* archivo = fopen(nombreArchivo, "ab");
+    if (archivo) {
+        fwrite(&nuevoJugador, sizeof(stJugador), 1, archivo);
+        fclose(archivo);
+    }
+}
