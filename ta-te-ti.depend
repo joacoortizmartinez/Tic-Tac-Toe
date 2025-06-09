@@ -40,3 +40,30 @@
 	<string.h>
 	<ctype.h>
 
+1749506962 source:d:\tateti\tic-tac-toe\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"stPromiedos.h"
+	"stJugador.h"
+
+1749503523 d:\tateti\tic-tac-toe\stpromiedos.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1749506425 d:\tateti\tic-tac-toe\stjugador.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+
+1749506862 source:d:\tateti\tic-tac-toe\stjugador.c
+	"stJugador.h"
+
+1749503523 source:d:\tateti\tic-tac-toe\stpromiedos.c
+	"stPromiedos.h"
+

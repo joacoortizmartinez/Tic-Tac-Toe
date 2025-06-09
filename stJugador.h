@@ -23,5 +23,7 @@ typedef struct {
 stJugador crear_cuenta(int v, stJugador jugadores[], int dim);
 int cargar_arreglo_users(stJugador jugadores[], int v, int dim, char nombre_archivo[50]);
 void guardar_arreglo_jugadores(stJugador jugadores[], int v, char nombre_archivo[50]);
+stJugador iniciar_sesion(stJugador juga[], int v, int dim);
+int buscar_email_password(char email[50], char pass[50], stJugador juga[], int v, int dim, int *posi);
 
 #endif // STJUGADOR_H_INCLUDED

@@ -104,3 +104,63 @@ void guardar_arreglo_jugadores(stJugador jugadores[], int v, char nombre_archivo
         printf("Error: no se pudo abrir el archivo '%s' para escritura.\n", nombre_archivo);
     }
 }
+
+
+stJugador iniciar_sesion(stJugador juga[], int v, int dim)
+{
+    stJugador aux;
+    int flag = 0;
+    int posi = 0;
+
+    printf("\n ---------- Iniciar Sesion ---------- \n");
+
+    while(flag == 0)
+    {
+        printf("\n Email: ");
+        scanf("%49s", aux.email);
+
+
+
+        printf("\n Password bro : ");
+        scanf("%49s", aux.password);
+
+        flag = buscar_email_password(aux.email, aux.password, juga, v, dim, &posi);
+
+        if(!flag)
+        {
+            printf("Contraseña o email invalido amigo \n");
+        }
+
+    }
+    stJugador jugaaa;
+    jugaaa = juga[posi];
+    return jugaaa;
+
+
+}
+
+int buscar_email_password(char email[50], char pass[50], stJugador juga[], int v, int dim, int *posi)
+{
+    int flag_total = 0;
+    int comparacion_email = 0;
+    int comparacion_password = 0;
+    int i = 0;
+    int posicion = 0;
+
+    while(i<v && flag_total == 0)
+    {
+        comparacion_email = strcmp(juga[i].email, email);
+        comparacion_password = strcmp(juga[i].password, pass);
+
+
+
+        if(comparacion_email == 0 && comparacion_password == 0)
+        {
+            flag_total = 1;
+            *posi = i;
+        }
+        i++;
+    }
+
+    return flag_total;
+}

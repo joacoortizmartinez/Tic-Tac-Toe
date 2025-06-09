@@ -27,10 +27,16 @@ int main()
     int dim_jugadores = 100;
 
     v_jugadores = cargar_arreglo_users(jugadores, v_jugadores, dim_jugadores, nom);
-    jugadores[v_jugadores] = crear_cuenta(v_jugadores, jugadores, dim_jugadores);
-    v_jugadores++;
-    guardar_arreglo_jugadores(jugadores, v_jugadores, nom);
+    //jugadores[v_jugadores] = crear_cuenta(v_jugadores, jugadores, dim_jugadores);
+    // v_jugadores++;
+    //guardar_arreglo_jugadores(jugadores, v_jugadores, nom);
 
+
+    stJugador jugador1;
+    printf("Inicia sesion jugador 1 \n");
+    jugador1 =  iniciar_sesion(jugadores, v_jugadores, dim_jugadores);
+
+    /** jugador2 =  INICIA SESION 2*/
     char tablero[3][3];
     int flag = 0;
     char op = 's';
@@ -45,14 +51,15 @@ int main()
         printf("Jugar contra la maquina o 1v1? 1/2 \n");
         scanf(" %d", &opcion);
 
-        cargar_tablero(tablero);
-        mostrar_tab(tablero);
+
 
 
         switch(opcion)
         {
         case 1:
             {
+                cargar_tablero(tablero);
+                mostrar_tab(tablero);
                 promiedos.partidos_pc++;
                 while(flag == 0)
             {
@@ -100,7 +107,12 @@ int main()
         case 2:
             {
                 promiedos.partidos_o++;
-                while(flag == 0)
+                stJugador jugador2;
+        printf("Inicia sesion jugador 2\n");
+        jugador2 =  iniciar_sesion(jugadores, v_jugadores, dim_jugadores);
+        cargar_tablero(tablero);
+        mostrar_tab(tablero);
+            while(flag == 0)
             {
             /** TURNO x */
             jugar_x(tablero);
