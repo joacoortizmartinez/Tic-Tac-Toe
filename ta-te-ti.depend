@@ -13,14 +13,15 @@
 1747920693 source:d:\facultad\programacion1\ta te ti\ta-te-ti\stpromiedos.c
 	"stPromiedos.h"
 
-1749486363 source:d:\p_final\tic-tac-toe\main.c
+1749769770 source:d:\p_final\tic-tac-toe\main.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	<string.h>
 	<ctype.h>
-	"stPromiedos.h"
 	"stJugador.h"
+	"stPartida.h"
+	"stPartidaXJugador.h"
 
 1749473979 d:\p_final\tic-tac-toe\stpromiedos.h
 	<stdio.h>
@@ -30,10 +31,10 @@
 1749473979 source:d:\p_final\tic-tac-toe\stpromiedos.c
 	"stPromiedos.h"
 
-1749486343 source:d:\p_final\tic-tac-toe\stjugador.c
+1749769820 source:d:\p_final\tic-tac-toe\stjugador.c
 	"stJugador.h"
 
-1749486351 d:\p_final\tic-tac-toe\stjugador.h
+1749769231 d:\p_final\tic-tac-toe\stjugador.h
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
@@ -66,4 +67,20 @@
 
 1749503523 source:d:\tateti\tic-tac-toe\stpromiedos.c
 	"stPromiedos.h"
+
+1749770542 source:d:\p_final\tic-tac-toe\stpartida.c
+	"stPartida.h"
+
+1749769154 d:\p_final\tic-tac-toe\stpartida.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1749770429 source:d:\p_final\tic-tac-toe\stpartidaxjugador.c
+	"stPartidaXJugador.h"
+
+1749770429 d:\p_final\tic-tac-toe\stpartidaxjugador.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
 

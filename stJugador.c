@@ -32,7 +32,7 @@ stJugador crear_cuenta(int v, stJugador jugadores[], int dim)
 
         for (int i = 0; i < v; i++) {
             if (strcmp(jugadores[i].username, creando.username) == 0) {
-                printf("El username ya existe, por favor cambialo.\n");
+                printf("El username ya existe, cambialo\n");
                 username_ok = 0;
                 break;
             }
@@ -48,7 +48,7 @@ stJugador crear_cuenta(int v, stJugador jugadores[], int dim)
         if (strchr(creando.email, '@') != NULL && strstr(creando.email, ".com") != NULL) {
             flag = 1;
         } else {
-            printf("Email invalido. Debe contener '@' y terminar en '.com'\n");
+            printf("Email invalido amigo. Debe contener '@' y terminar en '.com'\n");
         }
     }
 
