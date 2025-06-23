@@ -15,4 +15,5 @@ typedef struct {
 int obtener_ultimo_id_partida(char nombre_archivo[]);
 void guardar_partida(stPartida partida, char nombre_archivo[]);
 
+
 #endif // STPARTIDA_H_INCLUDED

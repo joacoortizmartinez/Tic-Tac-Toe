@@ -84,3 +84,39 @@
 	<stdlib.h>
 	<string.h>
 
+1750269080 source:c:\users\sofia\desktop\tic-tac-toe\stjugador.c
+	"stJugador.h"
+
+1750269080 c:\users\sofia\desktop\tic-tac-toe\stjugador.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+
+1750269080 source:c:\users\sofia\desktop\tic-tac-toe\stpartida.c
+	"stPartida.h"
+
+1750641156 c:\users\sofia\desktop\tic-tac-toe\stpartida.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1750269080 source:c:\users\sofia\desktop\tic-tac-toe\stpartidaxjugador.c
+	"stPartidaXJugador.h"
+
+1750269080 c:\users\sofia\desktop\tic-tac-toe\stpartidaxjugador.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1750641156 source:c:\users\sofia\desktop\tic-tac-toe\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+	"stJugador.h"
+	"stPartida.h"
+	"stPartidaXJugador.h"
+
